@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>GitHub Поиск</title>
+      	<script src="https://code.s3.yandex.net/react/libs/babel.min.js"></script>      
+        <link rel="stylesheet" href="https://code.s3.yandex.net/web-code/entrance-test/lesson-3/task-1/fonts.css" />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body class="page">
+        <div class="content-text">
+            <p class="text-center fz-20 m20 bold">
+                Входное тестирование Yandex</p>
+            <p class="pWidth fz-16">
+                Тест 4: Формы, взаимодействие с сервером, JSON</p>
+ 
+            <span class="pWidth fz-16 bold">
+                Задача</span>
+            <span class="pWidth fz-16">
+                Вам предстоит сделать поисковик, в котором можно искать репозитории в GitHub по их названию. Допишите код в файл task.js, чтобы при нажатии на кнопку «Найти» отправлялся запрос на https://api.nomoreparties.co/github-search?q= и текст поиска, который пользователь ввёл в форму. 
+                Добавьте кликабельную ссылку на репозиторий, а под ней разместите краткое описание.
+            </span>
+            <p class= "mt-20">
+                <span class="pWidth fz-16 bold ">
+                    Решение:             </span>
+                    <span class="pWidth fz-16">
+                        Решение на JavaScrip</span>
+            </p>
+        </div>
+
+        <header class="header">
+            <img src="https://code.s3.yandex.net/web-code/entrance-test/github-logo.svg" alt="" class="header__logo" />
+            <h1 class="header__title">GitHub Поиск</h1>
+        </header>
+        <section class="search">
+            <form class="search__form">
+                <input type="text" name="title" class="search__textfield" placeholder="Искать в GitHub" />
+                <button type="submit" class="search__button">
+                    Найти
+                </button>
+            </form>
+            <div class="search__result">
+                <h2 class="search__findings">
+
+                </h2>
+                <ul class="search__findings-list">
+
+                </ul>
+            </div>
+            <div class="search__error">
+
+            </div>
+        </section>
+        <script src="script.js" type="text/javascript"></script>
+    </body>
+</html>
